@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+.North-America:hover {
+    fill: red;
+    transition: 0.6s;
+    cursor: pointer;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    position: relative;
+    background-color: #4267b2;
+    max-width: 100vw;
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+
+.bigTitle {
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.top-container {
+    background-image: url("https://brilliantmaps.com/wp-content/uploads/facebook-world-map.jpg");
+    height: 200px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+.listScreen{
+    display: flex;
+    position: absolute;
+    top:50px;
+    left: 700px;
+}
+.listScreen span{
+    padding: 10px 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.listScreen span:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.chart{
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.mainScreen{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(227, 180, 228, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #4267b2;
+}
