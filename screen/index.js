@@ -49,7 +49,7 @@ class App {
 }
 const continents = document.querySelectorAll(".Continent");
 const app = new App();
-function createChart(id, xValues, yValues, colors) {
+function createChart(id, xValues, yValues, colors, labelName) {
     if (id !== "mainChart") {
         new Chart(id, {
             type: "bar",
@@ -64,7 +64,7 @@ function createChart(id, xValues, yValues, colors) {
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: "World Wine Production 2022"
+                    text: `Facebook Users in ${labelName} 2022`
                 }
             }
         });
@@ -108,7 +108,7 @@ function selectContinent(id) {
                 "#eee",
                 "#2b5797",
             ];
-            createChart(As.id, xValues, yValues, barColors);
+            createChart(As.id, xValues, yValues, barColors, "Asia");
             break;
         case 'Af':
             screen = new AfricaScreen();
@@ -123,7 +123,7 @@ function selectContinent(id) {
                 "#007954",
                 "#e8000B",
             ];
-            createChart(Af.id, xValues, yValues, barColors);
+            createChart(Af.id, xValues, yValues, barColors, "Africa");
             break;
         case 'Eu':
             screen = new EuScreen();
@@ -138,52 +138,52 @@ function selectContinent(id) {
                 "#002153",
                 "#FFCE00",
             ];
-            createChart(Eu.id, xValues, yValues, barColors);
+            createChart(Eu.id, xValues, yValues, barColors, "Europe");
             break;
         case 'Na':
             screen = new NorthAmericaScreen();
             app.changeActiveScreen(screen);
             const Na = document.getElementById("NaChart");
             xValues = ["Dominican Republic", "Mexico", "United States", "Canada", "El Salvador"];
-            yValues = [5.1, 78, 240, 23, 3.4, 0];
+            yValues = [6.8, 100, 204, 22.7, 4.4, 0];
             barColors = [
-                "#b91d47",
-                "#00aba9",
-                "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
+                "#C81025",
+                "#CF0921",
+                "#002664",
+                "#F70000",
+                "#0047AB",
             ];
-            createChart(Na.id, xValues, yValues, barColors);
+            createChart(Na.id, xValues, yValues, barColors, "North America");
             break;
         case 'Sa':
             screen = new SouthAmericaScreen();
             app.changeActiveScreen(screen);
             const Sa = document.getElementById("SaChart");
-            xValues = ["Peru", "Argentina", "Brazil", "Colombia", "Chile"];
-            yValues = [20, 30, 139, 29, 13, 0];
+            xValues = ["Peru", "Colombia", "Brazil", "Argentina", "Chile"];
+            yValues = [27, 38.1, 136.7, 33, 14.4, 0];
             barColors = [
-                "#b91d47",
-                "#00aba9",
-                "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
+                "#D21022",
+                "#F7C700",
+                "#009B3A",
+                "#70A7D8",
+                "#0037A1",
             ];
-            createChart(Sa.id, xValues, yValues, barColors);
+            createChart(Sa.id, xValues, yValues, barColors, "South America");
             break;
         case 'Oc':
             screen = new OceaniaScreen();
             app.changeActiveScreen(screen);
             const Oc = document.getElementById("OcChart");
-            xValues = ["Samoa", "New Zealand", "Australia", "Fiji", "Solomon Islands"];
-            yValues = [0.13, 3.5, 17.7, 0.6, 0.13, 0];
+            xValues = ["Solomon Islands", "New Zealand", "Australia", "Fiji", "Samoa"];
+            yValues = [0.14, 3.3, 16.4, 0.6, 0.13, 0];
             barColors = [
-                "#b91d47",
-                "#00aba9",
-                "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
+                "#205831",
+                "#BB1424",
+                "#000087",
+                "#65B9DE",
+                "#C81026",
             ];
-            createChart(Oc.id, xValues, yValues, barColors);
+            createChart(Oc.id, xValues, yValues, barColors, "Oceania");
             break;
         case "main":
             screen = new MainScreen();
