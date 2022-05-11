@@ -100,13 +100,13 @@ function selectContinent(id) {
             app.changeActiveScreen(screen);
             const As = document.getElementById("AsChart");
             xValues = ["Vietnam", "Indonesia", "India", "Philippines", "Thailand"];
-            yValues = [70, 129, 392, 82, 50, 0];
+            yValues = [80.4, 156.1, 400.2, 94.2, 57.4, 0];
             barColors = [
+                "#DB2017",
                 "#b91d47",
-                "#00aba9",
+                "#ff9933",
+                "#eee",
                 "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
             ];
             createChart(As.id, xValues, yValues, barColors);
             break;
@@ -114,14 +114,14 @@ function selectContinent(id) {
             screen = new AfricaScreen();
             app.changeActiveScreen(screen);
             const Af = document.getElementById("AfChart");
-            xValues = ["Nigeria", "South Africa", "Egypt", "Morocco", "Tunisia"];
-            yValues = [2.5, 3.3, 4.8, 2.6, 1.9, 0];
+            xValues = ["Morocco", "Nigeria", "Egypt", "South Africa", "Tunisia"];
+            yValues = [22.2, 30.9, 51.2, 26.7, 8.1, 0];
             barColors = [
-                "#b91d47",
-                "#00aba9",
-                "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
+                "#c22229",
+                "#239E46",
+                "#ce1126",
+                "#007954",
+                "#e8000B",
             ];
             createChart(Af.id, xValues, yValues, barColors);
             break;
@@ -129,14 +129,14 @@ function selectContinent(id) {
             screen = new EuScreen();
             app.changeActiveScreen(screen);
             const Eu = document.getElementById("EuChart");
-            xValues = ["Germany", "Turkey", "United Kingdom", "France", "Italy"];
-            yValues = [37.4, 44, 44, 38.5, 34.9, 0];
+            xValues = ["Italy", "United Kingdom", "Turkey", "France", "Germany"];
+            yValues = [32.5, 40.5, 44.3, 35.4, 30.1, 0];
             barColors = [
-                "#b91d47",
-                "#00aba9",
-                "#2b5797",
-                "#e8c3b9",
-                "#1e7145",
+                "#009344",
+                "#001b69",
+                "#e40310",
+                "#002153",
+                "#FFCE00",
             ];
             createChart(Eu.id, xValues, yValues, barColors);
             break;

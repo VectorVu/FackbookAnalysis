@@ -3,7 +3,7 @@ class NorthAmericaScreen{
     $chartEle;
     $chart;
     $description;
-
+    $thongtin;
     constructor() {
         this.$container = document.createElement("div");
         this.$container.classList.add("mainScreen");
@@ -11,9 +11,15 @@ class NorthAmericaScreen{
         this.$chartEle.id="NaChart";
         this.$chartEle.classList.add("chart");
         this.$description = document.createElement("div");
-        this.$description.innerText = "Thông tin chi tiết ở đây"
+        
+        // vi du 
+        this.$thongtin = document.createElement("p");
+        this.$thongtin.innerText = "thoong tin chi tiet ......";
+
+        
     }
     render(appEle) {
+        this.$description.append(this.$thongtin);
         this.$container.append(this.$chartEle, this.$description);
        
         appEle.appendChild(this.$container);
