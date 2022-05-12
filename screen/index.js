@@ -94,6 +94,14 @@ function selectContinent(id) {
     let yValues;
     let barColors;
     let screen;
+    continents.forEach(cont => {
+        if (cont.id !== id || cont.id === "main") {
+            cont.classList.remove("active");
+        }
+        else {
+            cont.classList.add("active");
+        }
+    })
     switch (id) {
         case 'As':
             screen = new AsiaScreen();
