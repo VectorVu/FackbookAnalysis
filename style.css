@@ -121,7 +121,8 @@ body::-webkit-scrollbar-thumb {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-   margin: 20px auto;
+    margin: 20px auto;
+    max-width: 900px;
   }
   
 .generalInfor  td, th {
@@ -143,4 +144,8 @@ body::-webkit-scrollbar-thumb {
 }
 .generalInfor h1{
     margin: 10px auto;
+}
+.generalInfor h2{
+    margin: 10px auto;
+    max-width: 900px;
 }

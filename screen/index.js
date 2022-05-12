@@ -68,7 +68,8 @@ function createChart(id, xValues, yValues, colors, labelName) {
                 legend: { display: false },
                 title: {
                     display: true,
-                    text: `Facebook Users in ${labelName} 2022`
+                    text: `Top 5 Countries with the Highest Number of Facebook Users in ${labelName} 2022`,
+                    fontSize: 25
                 }
             }
         });
@@ -108,7 +109,9 @@ function createChart(id, xValues, yValues, colors, labelName) {
             options: {
                 title: {
                     display: true,
-                    text: "Facebook Users by Continents 2022"
+                    text: "Facebook Users by Continents 2022",
+                    fontSize: 20,
+                    fontColor: "#111222"
                 }
             }
         });
@@ -139,7 +142,7 @@ function selectContinent(id) {
                 "#DB2017",
                 "#b91d47",
                 "#ff9933",
-                "#eee",
+                "#00aba9",
                 "#2b5797",
             ];
             createChart(As.id, xValues, yValues, barColors, "Asia");
