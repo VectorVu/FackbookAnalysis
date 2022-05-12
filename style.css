@@ -26,24 +26,13 @@ body {
     cursor: pointer;
 }
 
-.top-container {
-    background-image: url("https://brilliantmaps.com/wp-content/uploads/facebook-world-map.jpg");
-    height: 200px;
-}
-
-.content {
-    padding: 16px;
-}
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.sticky+.content {
-    padding-top: 102px;
-}
+
 .listScreen{
     display: flex;
     position: relative;
@@ -128,26 +117,30 @@ body::-webkit-scrollbar-thumb {
 
 /* them */
 
-table {
+.generalInfor table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+   margin: 20px auto;
   }
   
-  td, th {
+.generalInfor  td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
   
-  tr:nth-child(even) {
+.generalInfor  tr:nth-child(even) {
     background-color: #37cdf3;
   }
-  p {
+.generalInfor  p {
     text-align: justify;
     text-justify: inter-word;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+    margin: 10px auto;
+    max-width: 900px;
+    font-size: large;
+
+}
+.generalInfor h1{
+    margin: 10px auto;
+}
