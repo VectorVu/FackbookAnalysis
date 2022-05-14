@@ -12,7 +12,7 @@ body {
 .header {
     position: relative;
     background-color: #4267b2;
-    max-width: 100vw;
+    width: 1528px;
     height: 100px;
     align-items: center;
     display: flex;
@@ -51,18 +51,18 @@ body {
 }
 .chart{
     width: 100%;
-    max-width: 700px;
+   max-width: 700px;
     margin: 10px auto;
     cursor: pointer;
 }
 .mainScreen{
-    max-width: 100vw;
+    max-width: 1528px;
     display: flex;
     flex-direction: column;
 }
 .description{
     display: flex;
-    max-width: 1140px;
+    width: 1140px;
     margin: 20px auto;
 
 }
@@ -116,7 +116,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* them */
-
+.generalInfor{
+    max-width: 1528px;
+}
 .generalInfor table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

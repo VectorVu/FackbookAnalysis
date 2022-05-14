@@ -237,7 +237,7 @@ function selectContinent(id) {
                 "#1e7145",
                 "#111222"
             ];
-            let xValues2 = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+            let xValues2 = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
             let yValues2 = [276, 518, 766, 980, 1170, 1334, 1517, 1754, 1898, 2036, 2255, 2434, 2710, 2892, 2936];
             createChart(line.id, xValues2, yValues2);
             createChart(main.id, xValues, yValues, barColors);
