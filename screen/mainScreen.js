@@ -20,7 +20,7 @@ $generalInfor;
        <p>With nearly 2.5 billion monthly users, Facebook is hands down the largest social media site in the world. While that practically ensures at least some of your audience regularly uses the platform, it’s developed a somewhat negative reputation amongst younger users that are increasingly turning to other alternative sites.</p>
        <br>
        <h2 style="text-align: center;">Some popular social networks worldwide as of January 2022, ranked by number of monthly active users (in millions)</h2>
-       <table style="width: 60%; ">
+       <table style="width: 60%;">
          <tr>
            <th>Characteristic</th>
            <th style="width:50%">Number of active users in millions</th>
